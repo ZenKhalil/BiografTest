@@ -31,11 +31,6 @@ class TestResponse {
 @Profile("test")
 public class ControllerToTestRoles {
 
-    @GetMapping("/")
-    public String detteerroden() {
-        return "Du er i roden";
-    }
-
     final UserWithRolesService userWithRolesService;
 
     public ControllerToTestRoles(UserWithRolesService userWithRolesService) {
